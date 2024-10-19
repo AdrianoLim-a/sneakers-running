@@ -1,0 +1,19 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Esqueci a Senha</h5>
+                    
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Digite o seu email" [(ngModel)]="email">
+                    </div>
+            
+                    <button type="button" class="btn btn-primary" (click)="esqueciSenha()">Enviar</button>
+                </div>
+                <p style="align-self: center;"><b>{{mensagem}}</b></p>
+            </div>
+        </div>
+    </div>
+</div>

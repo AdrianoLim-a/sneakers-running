@@ -1,0 +1,27 @@
+<div class="container mt-5 d-flex align-items-center justify-content-center">
+  <div>
+      <h1 class="display-4 mb-5 text-center">Pesquisa de Produtos</h1>
+  
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Buscar produto"[(ngModel)]="busca">
+            <button class="btn btn-primary" type="submit"(click)="pesquisar()" style="margin-right: 10px;">Pesquisar</button>
+          </div>
+          
+
+      <h3>{{mensagem}}</h3>
+
+      <div class="row">
+          <div *ngFor="let item of lista" class="col-md-4 mb-4">
+              <div class="card">
+                  <img class="card-img-top" src="./assets/{{item.codigo}}.jpg" alt="Card image" (click)="abrirDetalhe(item)">
+                  <div class="card-body">
+                      <h5 class="card-title">{{item.nome}}</h5>
+                      <p class="card-text">R$ {{item.valor}}</p>
+                      <button *ngIf="item.estoque > 0" class="btn btn-primary" (click)="comprar(item)">Comprar</button>
+                      <button *ngIf="item.estoque <= 0" class="btn btn-secondary" disabled>Sem Estoque</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+.d-flex{align-items: stretch;}
+
+.custom-img {
+    max-height: 50px;
+}
+
+/* Estilo para alinhar os botões e o campo de pesquisa */
+.d-flex.align-items-center img,
+.d-flex.align-items-center input,
+.d-flex.align-items-center button {
+    margin-bottom: 0;
+}
+
+/* Estilo para reduzir o tamanho das imagens dos produtos */
+.card-img-top {
+
+    height: 100px; /* Ajuste conforme necessário */
+    object-fit: cover;
+}

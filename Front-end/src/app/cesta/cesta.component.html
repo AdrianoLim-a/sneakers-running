@@ -1,0 +1,37 @@
+<h1 class="display-4 mb-5 text-black">Carrinho</h1>
+<div class="mt-5">
+    <table class="table table-hover" *ngIf="lista.length > 0">
+        <thead>
+            <tr>
+                <th scope="col">Nome do Produto</th>
+                <th scope="col">Quantidade</th>
+                <th scope="col">Total</th>
+                <th scope="col">Foto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of lista">
+                <td>{{ item.produto }}</td>
+                <td>{{ item.quantidade }}</td>
+                <td>{{ item.valorTotal | currency:'BRL' }}</td>
+                <td><img src="./assets/{{ item.codigoProduto }}.jpg" class="img-thumbnail" width="50px"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="total-cesta">
+        <p class="fw-bold" *ngIf="totalCesta > 0">Total da Cesta: {{ totalCesta | currency:'BRL' }}</p>
+    </div>
+
+    <div class="total-cesta" [ngClass]="{ 'alert': totalCesta <= 0, 'alert-danger': totalCesta <= 0 }"
+        style="align-self: center;">
+        <p class="fw-bold" *ngIf="totalCesta <= 0">{{ mensagem }}</p>
+    </div>
+
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <button class="btn btn-primary me-auto" (click)="comprar();" *ngIf="totalCesta > 0">Finalizar Compra</button>
+        <button class="btn btn-danger" (click)="limpar();" *ngIf="totalCesta > 0">Limpar Cesta</button>
+    </div>
+
+    <p class="fw-bold text-success" *ngIf="compraRealizada">{{ mensagemCompra }}</p>
+</div>

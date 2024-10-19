@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-6 col-sm-12">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Login</h2>
+                    <h4>{{mensagem}}</h4>
+            
+                        <div class="mb-3">
+                            <label for="emailLogin" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="emailLogin" [(ngModel)]="obj.email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="senhaLogin" class="form-label">Senha</label>
+                            <input type="password" class="form-control" id="senhaLogin"[(ngModel)]="obj.senha">
+                        </div>
+                        <button type="button" class="btn btn-primary" (click)="entrar();">Entrar</button>
+                    
+                </div>
+            </div>
+            <div class="mt-3 text-center">
+                <a href="./esqueci">Esqueci minha senha</a>
+            </div>
+        </div>
+        <!-- Link para a tela de cadastro -->
+        <div class="col-md-6 col-sm-12 mt-3">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Novo Cadastro</h2>
+                    <p class="card-text">Ainda não possui cadastro?</p>
+                    <a href="./cadastro" class="btn btn-primary">Cadastre-se aqui</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

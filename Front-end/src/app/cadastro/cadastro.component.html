@@ -1,0 +1,56 @@
+<div class="container" style="max-width: 600px;">
+    <div class="card mt-5">
+        <div class="container mt-5">
+            <h1 class="display-4 mb-1 text-center text-black">Cadastro</h1>
+        </div>
+        <div class="d-flex justify-content-end p-3">
+            <app-logout ></app-logout>
+          </div>
+          
+        <div class="alert alert-info">{{mensagem}}</div>
+        <div class="card-body">
+            <div class="mb-4">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" [(ngModel)]="obj.nome" class="form-control" placeholder="Digite seu nome">
+            </div>
+            <div class="mb-4">
+                <label for="email">Email</label>
+                <input type="email" name="email" [(ngModel)]="obj.email" class="form-control" placeholder="Digite seu email">
+            </div>
+            <div class="mb-4">
+                <label for="telefone">Telefone</label>
+                <input type="tel" name="telefone" [(ngModel)]="obj.telefone" class="form-control" placeholder="Digite seu telefone">
+            </div>
+            <div class="mb-4">
+                <label for="documento">CPF</label>
+                <input type="text" name="documento" [(ngModel)]="obj.documento" class="form-control" placeholder="Digite seu CPF (apenas números)">
+            </div>
+            <div class="mb-4">
+                <label for="cep">CEP</label>
+                <input type="text" name="cep" [(ngModel)]="obj.cep" class="form-control" placeholder="Digite seu CEP (apenas números)">
+            </div>
+            <div class="mb-4">
+                <label for="cidade">Cidade</label>
+                <input type="text" name="cidade" [(ngModel)]="obj.cidade" class="form-control" placeholder="Informe a sua cidade">
+            </div>
+            <div class="mb-4">
+                <label for="estado">UF</label>
+                <input type="text" name="estado" [(ngModel)]="obj.estado" class="form-control" placeholder="Informe a sua UF">
+            </div>
+            <div class="mb-4">
+                <label for="logradouro">Logradouro</label>
+                <input type="text" name="logradouro" [(ngModel)]="obj.logradouro" class="form-control" placeholder="Informe o seu logradouro">
+            </div>
+            <div class="mb-4">
+                <label for="complemento">Complemento</label>
+                <input type="text" name="complemento" [(ngModel)]="obj.complemento" class="form-control" placeholder="Informe o complemento, caso haja">
+            </div>
+            <div class="mb-4">
+                <label for="senhaCadastro">Senha</label>
+                <input type="text" name="senhaCadastro" [(ngModel)]="obj.senha" class="form-control" id="senhaCadastro" placeholder="Digite sua senha">
+            </div>
+            <button (click)="gravar()" class="btn btn-primary">Cadastrar</button>
+        </div>
+    </div>
+</div>
+<div style="height: 50px;"></div>

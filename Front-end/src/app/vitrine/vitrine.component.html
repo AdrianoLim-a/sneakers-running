@@ -1,0 +1,20 @@
+<h1 class="display-4 mb-5 text-black">Catálago de Produtos</h1>
+<div class="container mt-3">
+    <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+        <div class="col text-center " *ngFor="let item of lista">
+            <div class="card">
+                <a href="./detalhe" (click)="abrirDetalhe(item)">
+                    <img src="./assets/{{ item.codigo }}.jpg" class="card-img-top" alt="{{ item.nome }}" style="max-width: 150px;">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">{{ item.nome }}</h5>
+                    <p class="card-text">R$ {{ item.valor }},00</p>
+                    <button *ngIf="item.estoque > 0" class="btn btn-primary btn-sm" (click)="comprar(item)">Comprar</button>
+                    
+                    <p class="card-text" *ngIf="item.estoque == 0"><small class="text-muted">Sem Estoque</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="height: 50px;"></div>
