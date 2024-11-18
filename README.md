@@ -1,8 +1,12 @@
+
+
 ## Descrição do Projeto
 
 Sneakers Running é um projeto desenvolvido para criar uma experiência online interativa para a venda de tênis esportivos. O sistema oferece funcionalidades como catálogo de produtos, carrinho de compras, cadastro de usuários, recuperação de senha via e-mail e salvamento de dados de compras em um banco de dados. 
 
 Este projeto utiliza tecnologias modernas como AngularJS no frontend e Spring Boot no backend.
+
+---
 
 ## Objetivos
 
@@ -12,6 +16,8 @@ Este projeto utiliza tecnologias modernas como AngularJS no frontend e Spring Bo
 - Implementar recuperação de senha com envio de e-mail.
 - Garantir o armazenamento seguro de dados de compra em um banco de dados.
 
+---
+
 ## Funcionalidades do Sistema
 
 - **Catálogo de Produtos:** Exibição de todos os modelos disponíveis, com detalhes como preço e descrição.
@@ -19,7 +25,9 @@ Este projeto utiliza tecnologias modernas como AngularJS no frontend e Spring Bo
 - **Cadastro de Usuários:** Registre-se, faça login e acompanhe suas compras.
 - **Esqueci a Senha:** Recuperação de acesso por e-mail.
 - **Banco de Dados:** Salvamento seguro de informações de pedidos e usuários.
-- 
+
+---
+
 ## Tecnologias Utilizadas
 
 ### Frontend
@@ -31,18 +39,21 @@ Este projeto utiliza tecnologias modernas como AngularJS no frontend e Spring Bo
 - **Java:** Linguagem para desenvolvimento do backend.
 - **Spring Boot:** Framework para construção de APIs RESTful.
 
+---
+
 ## Estrutura do Projeto
 
 - **frontend/:** Código-fonte do frontend desenvolvido em AngularJS.
 - **backend/:** Código-fonte do backend desenvolvido em Java.
 
+---
+
 ## Configuração do Ambiente
 
 ### 1. Clonar o Repositório
 Clone o repositório para o seu ambiente local:
-
+``bash
 git clone https://github.com/AdrianoLim-a/Repositorio_web.git
-
 2. Configurar o Frontend (AngularJS)
 Instale o Angular CLI, caso ainda não tenha:
 bash
@@ -50,7 +61,6 @@ Copiar código
 npm install -g @angular/cli
 Navegue até a pasta do frontend e instale as dependências:
 bash
-
 Copiar código
 cd frontend
 npm install
@@ -74,3 +84,4 @@ Execute o backend pela sua IDE ou terminal:
 bash
 Copiar código
 mvn spring-boot:run
+
