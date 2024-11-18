@@ -54,6 +54,9 @@ Este projeto utiliza tecnologias modernas como AngularJS no frontend e Spring Bo
 Clone o repositório para o seu ambiente local:
 ``bash
 git clone https://github.com/AdrianoLim-a/Repositorio_web.git
+
+---
+
 2. Configurar o Frontend (AngularJS)
 Instale o Angular CLI, caso ainda não tenha:
 bash
@@ -65,9 +68,13 @@ Copiar código
 cd frontend
 npm install
 
+---
+
 3. Configurar o Backend (Java)
 Importe o projeto backend em sua IDE favorita (IntelliJ, Eclipse, etc.).
 Configure as variáveis de ambiente e o banco de dados de acordo com o arquivo application.properties.
+
+---
 
 4. Executar o Projeto
 Frontend
