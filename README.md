@@ -51,7 +51,7 @@ Este projeto utiliza tecnologias modernas como AngularJS no frontend e Spring Bo
 
 ### 1. Instalar o Node.js
 
-Certifique-se que o Node esteja instalado, caso já tenha feito a instalação, pode ignorar esta etapa, caso não tenha feito, acesso o seguinte link:
+Certifique-se que o Node esteja instalado, caso já tenha feito a instalação pode ignorar esta etapa e caso não tenha feito, acesso o seguinte link:
 
 
 https://www.nodejs.tech/pt-br/download
