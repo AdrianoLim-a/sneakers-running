@@ -52,7 +52,7 @@ Este projeto utiliza tecnologias modernas como AngularJS no frontend e Spring Bo
 
 ### 1. Clonar o Repositório
 Clone o repositório para o seu ambiente local:
-``bash
+```bash
 git clone https://github.com/AdrianoLim-a/Repositorio_web.git
 
 ---
