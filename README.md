@@ -86,20 +86,6 @@ Configure as variáveis de ambiente e o banco de dados de acordo com o arquivo a
 
    ```create database loja;```
 
-e adicionar produtos em estoque:
-
-```
-INSERT INTO produto(codigo, nome, descritivo, valor, valor_Promo, estoque, destaque) VALUES
-  (1, 'Tenis Sport', 'O Tênis de Corrida oferece conforto e desempenho para suas corridas. Com amortecimento responsivo e design leve, é perfeito para corredores em busca de performance e conforto.', 100, 90, 1, 1),
-(2, 'Tenis Air Force', 'O Tênis Air Force Preto combina estilo e conforto em um design clássico. Feito com material durável e uma sola resistente, é perfeito para qualquer ocasião. Seja casual ou sofisticado, este tênis é uma escolha elegante para o dia a dia.', 500, 450, 10, 1),
-(3, 'Tenis Original', 'O Tênis Adidas Originals Gazelle Amarelo é uma escolha vibrante e elegante para quem busca estilo urbano. Com seu design clássico e conforto duradouro, é perfeito para destacar-se com autenticidade e modernidade.', 300, 290, 10, 1),
-(4, 'Tenis Luma', 'O Tênis Puma Suede é um clássico atemporal. Com seu design icônico e conforto duradouro, é uma escolha elegante para qualquer look casual. Feito com materiais de qualidade, oferece estilo e versatilidade para o dia a dia.', 250, 290, 10, 1),
-(5, 'Vans Old School', 'O Tênis Vans Old Skool é um clássico da marca. Com seu design icônico e conforto, é perfeito para qualquer look casual. Feito com materiais de qualidade, oferece estilo e versatilidade para o dia a dia.', 150, 140, 5, 1),
-(6, 'Tenis Mizuno Casual City', 'O Tênis Mizuno Casual City é uma escolha elegante para quem busca estilo urbano. Com seu design moderno e conforto duradouro, é perfeito para destacar-se com autenticidade e modernidade.', 200, 190, 8, 1),
-(7, 'Nike SB Chronos', 'O Tênis Nike SB Chronos é uma escolha vibrante e elegante para quem busca estilo urbano. Com seu design moderno e conforto, é perfeito para destacar-se com autenticidade e modernidade.', 180, 170, 6, 1),
-(8, 'Adidas Lite Racer', 'O Tênis Adidas Lite Racer é um clássico da marca. Com seu design icônico e conforto, é perfeito para qualquer look casual. Feito com materiais de qualidade, oferece estilo e versatilidade', 200, 210, 7, 1),
-(9, 'Converse All Star', 'O Tênis Converse All Star é um clássico atemporal. Com seu design icônico e conforto duradouro, é uma escolha versátil para qualquer look casual. Feito com materiais de qualidade, oferece estilo e personalidade para o dia a dia.', 180, 170, 8, 1);
-```
 
 5. Executar o Projeto
 Frontend
@@ -125,7 +111,23 @@ Copiar código
 
 ```mvn spring-boot:run```
 
-Ajustar as configurações do banco de dados no arquivo "application.properties"
+Ajustar as configurações do banco de dados no arquivo "application.properties".
+
+E adicionar produtos em estoque:
+
+```
+INSERT INTO produto(codigo, nome, descritivo, valor, valor_Promo, estoque, destaque) VALUES
+  (1, 'Tenis Sport', 'O Tênis de Corrida oferece conforto e desempenho para suas corridas. Com amortecimento responsivo e design leve, é perfeito para corredores em busca de performance e conforto.', 100, 90, 1, 1),
+(2, 'Tenis Air Force', 'O Tênis Air Force Preto combina estilo e conforto em um design clássico. Feito com material durável e uma sola resistente, é perfeito para qualquer ocasião. Seja casual ou sofisticado, este tênis é uma escolha elegante para o dia a dia.', 500, 450, 10, 1),
+(3, 'Tenis Original', 'O Tênis Adidas Originals Gazelle Amarelo é uma escolha vibrante e elegante para quem busca estilo urbano. Com seu design clássico e conforto duradouro, é perfeito para destacar-se com autenticidade e modernidade.', 300, 290, 10, 1),
+(4, 'Tenis Luma', 'O Tênis Puma Suede é um clássico atemporal. Com seu design icônico e conforto duradouro, é uma escolha elegante para qualquer look casual. Feito com materiais de qualidade, oferece estilo e versatilidade para o dia a dia.', 250, 290, 10, 1),
+(5, 'Vans Old School', 'O Tênis Vans Old Skool é um clássico da marca. Com seu design icônico e conforto, é perfeito para qualquer look casual. Feito com materiais de qualidade, oferece estilo e versatilidade para o dia a dia.', 150, 140, 5, 1),
+(6, 'Tenis Mizuno Casual City', 'O Tênis Mizuno Casual City é uma escolha elegante para quem busca estilo urbano. Com seu design moderno e conforto duradouro, é perfeito para destacar-se com autenticidade e modernidade.', 200, 190, 8, 1),
+(7, 'Nike SB Chronos', 'O Tênis Nike SB Chronos é uma escolha vibrante e elegante para quem busca estilo urbano. Com seu design moderno e conforto, é perfeito para destacar-se com autenticidade e modernidade.', 180, 170, 6, 1),
+(8, 'Adidas Lite Racer', 'O Tênis Adidas Lite Racer é um clássico da marca. Com seu design icônico e conforto, é perfeito para qualquer look casual. Feito com materiais de qualidade, oferece estilo e versatilidade', 200, 210, 7, 1),
+(9, 'Converse All Star', 'O Tênis Converse All Star é um clássico atemporal. Com seu design icônico e conforto duradouro, é uma escolha versátil para qualquer look casual. Feito com materiais de qualidade, oferece estilo e personalidade para o dia a dia.', 180, 170, 8, 1);
+```
+
 ---
 
 
