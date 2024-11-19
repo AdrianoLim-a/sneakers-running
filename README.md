@@ -65,14 +65,14 @@ Navegue até a pasta do frontend e instale as dependências:
 bash
 Copiar código
 
----
+
 ```cd frontend```
 
----
+
 
 ```npm install```
 
----
+
 
 3. Configurar o Backend (Java)
 Importe o projeto backend em sua IDE favorita (IntelliJ, Eclipse, etc.).
@@ -84,14 +84,13 @@ Configure as variáveis de ambiente e o banco de dados de acordo com o arquivo a
 Frontend
 No diretório do frontend, execute:
 
-bash
-Copiar código
+bash 
 
----
+Copiar código
 
 ```ng serve```
 
----
+
 
 Acesse o frontend no navegador através do endereço: http://localhost:4200.
 
@@ -99,6 +98,8 @@ Backend
 Execute o backend pela sua IDE ou terminal:
 
 bash
+
 Copiar código
+
 ```mvn spring-boot:run```
 
