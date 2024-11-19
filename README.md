@@ -54,8 +54,7 @@ Este projeto utiliza tecnologias modernas como AngularJS no frontend e Spring Bo
 Clone o repositório para o seu ambiente local:
 ```bash
 git clone https://github.com/AdrianoLim-a/Repositorio_web.git
-
----
+```
 
 2. Configurar o Frontend (AngularJS)
 Instale o Angular CLI, caso ainda não tenha:
