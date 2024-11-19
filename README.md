@@ -89,10 +89,12 @@ Configure as variáveis de ambiente e o banco de dados de acordo com o arquivo a
    
    Criar o banco de dados MyQL, utilizando o MySQL Wokbench 8.0, utilizando o seguinte comando:
 
-   ```create database loja;```
+   ```bash
+   create database loja;
+   ```
 
 
-5. Executar o Projeto
+6. Executar o Projeto
    Frontend
    No diretório do frontend, execute:
 
