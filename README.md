@@ -122,7 +122,6 @@ Execute o backend pela sua IDE ou terminal:
 mvn spring-boot:run
 ```
 
-Ajustar as configurações do banco de dados no arquivo "application.properties".
 
 E adicionar produtos em estoque:
 
