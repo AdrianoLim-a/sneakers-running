@@ -60,12 +60,14 @@ git clone https://github.com/AdrianoLim-a/Repositorio_web.git
 Instale o Angular CLI, caso ainda não tenha:
 bash
 Copiar código
-npm install -g @angular/cli
+```npm install -g @angular/cli```
 Navegue até a pasta do frontend e instale as dependências:
 bash
 Copiar código
-cd frontend
-npm install
+
+```cd frontend```
+
+```npm install```
 
 ---
 
@@ -81,7 +83,7 @@ No diretório do frontend, execute:
 
 bash
 Copiar código
-ng serve
+```ng serve```
 Acesse o frontend no navegador através do endereço: http://localhost:4200.
 
 Backend
@@ -89,5 +91,5 @@ Execute o backend pela sua IDE ou terminal:
 
 bash
 Copiar código
-mvn spring-boot:run
+```mvn spring-boot:run```
 
