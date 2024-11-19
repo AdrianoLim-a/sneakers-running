@@ -95,7 +95,9 @@ create database loja;
 
 
 ### 5. Executar o Projeto
+
 Frontend
+
 No diretório do frontend, execute:
 
 ```bash
