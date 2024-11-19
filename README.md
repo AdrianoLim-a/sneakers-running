@@ -65,8 +65,7 @@ git clone https://github.com/AdrianoLim-a/Repositorio_web.git
 
 ### 3. Configurar o Frontend (AngularJS)
 Instale o Angular CLI, caso ainda não tenha:
-bash
-Copiar código
+
 ```bash
 npm install -g @angular/cli
 ```
