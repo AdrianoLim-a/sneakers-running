@@ -65,7 +65,10 @@ Navegue até a pasta do frontend e instale as dependências:
 bash
 Copiar código
 
+---
 ```cd frontend```
+
+---
 
 ```npm install```
 
@@ -83,7 +86,13 @@ No diretório do frontend, execute:
 
 bash
 Copiar código
+
+---
+
 ```ng serve```
+
+---
+
 Acesse o frontend no navegador através do endereço: http://localhost:4200.
 
 Backend
