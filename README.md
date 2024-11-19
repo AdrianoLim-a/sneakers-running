@@ -93,7 +93,7 @@ Configure as variáveis de ambiente e o banco de dados de acordo com o arquivo a
 
 ### 5. Preparar o ambiente do Banco de Dados Relacional (MySQL)
    
-Criar o banco de dados MyQL, utilizando o MySQL Wokbench 8.0, utilizando o seguinte comando:
+Criar o banco de dados MyQL, no MySQL Wokbench 8.0, utilizando o seguinte comando:
 
 ```bash
 create database loja;
