@@ -66,11 +66,11 @@ bash
 Copiar código
 
 
-```cd frontend```
+   ```cd frontend```
 
 
 
-```npm install```
+   ```npm install```
 
 
 
