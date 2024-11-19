@@ -49,13 +49,21 @@ Este projeto utiliza tecnologias modernas como AngularJS no frontend e Spring Bo
 
 ## Configuração do Ambiente
 
-### 1. Clonar o Repositório
+### 1. Instalar o Node.js
+
+Certifique-se que o Node esteja instalado, caso já tenha feito a instalação, pode ignorar esta etapa, caso não tenha feito, acesso o seguinte link:
+
+
+https://www.nodejs.tech/pt-br/download
+
+
+### 2. Clonar o Repositório
 Clone o repositório para o seu ambiente local:
 ```bash
 git clone https://github.com/AdrianoLim-a/Repositorio_web.git
 ```
 
-### 2. Configurar o Frontend (AngularJS)
+### 3. Configurar o Frontend (AngularJS)
 Instale o Angular CLI, caso ainda não tenha:
 bash
 Copiar código
@@ -63,8 +71,7 @@ Copiar código
 npm install -g @angular/cli
 ```
 Navegue até a pasta do frontend e instale as dependências:
-bash
-Copiar código
+
 
 
 ```bash
@@ -79,13 +86,13 @@ npm install
 
 
 
-### 3. Configurar o Backend (Java)
+### 4. Configurar o Backend (Java)
 Importe o projeto backend em sua IDE favorita (IntelliJ, Eclipse, etc.).
 Configure as variáveis de ambiente e o banco de dados de acordo com o arquivo application.properties.
 
 ---
 
-### 4. Preparar o ambiente do Banco de Dados Relacional (MySQL)
+### 5. Preparar o ambiente do Banco de Dados Relacional (MySQL)
    
 Criar o banco de dados MyQL, utilizando o MySQL Wokbench 8.0, utilizando o seguinte comando:
 
@@ -94,7 +101,7 @@ create database loja;
 ```
 
 
-### 5. Executar o Projeto
+### 6. Executar o Projeto
 
 Frontend
 
