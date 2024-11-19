@@ -1,5 +1,4 @@
 
-
 ## Descrição do Projeto
 
 Sneakers Running é um projeto desenvolvido para criar uma experiência online interativa para a venda de tênis esportivos. O sistema oferece funcionalidades como catálogo de produtos, carrinho de compras, cadastro de usuários, recuperação de senha via e-mail e salvamento de dados de compras em um banco de dados. 
@@ -60,17 +59,23 @@ git clone https://github.com/AdrianoLim-a/Repositorio_web.git
 Instale o Angular CLI, caso ainda não tenha:
 bash
 Copiar código
-```npm install -g @angular/cli```
+```bash
+npm install -g @angular/cli
+```
 Navegue até a pasta do frontend e instale as dependências:
 bash
 Copiar código
 
 
-   ```cd frontend```
+```bash
+cd frontend
+```
 
 
 
-   ```npm install```
+```bash
+npm install
+```
 
 
 
@@ -91,11 +96,9 @@ Configure as variáveis de ambiente e o banco de dados de acordo com o arquivo a
    Frontend
    No diretório do frontend, execute:
 
-   bash 
-
-   Copiar código
-
-   ```ng serve```
+   ```bash
+   ng serve
+   ```
 
 
 
@@ -105,17 +108,16 @@ Configure as variáveis de ambiente e o banco de dados de acordo com o arquivo a
 
    Execute o backend pela sua IDE ou terminal:
 
-   bash
 
-   Copiar código
-
-   ```mvn spring-boot:run```
+   ```bash
+   mvn spring-boot:run
+   ```
 
    Ajustar as configurações do banco de dados no arquivo "application.properties".
 
    E adicionar produtos em estoque:
 
-   ```
+   ```bash
    INSERT INTO produto(codigo, nome, descritivo, valor, valor_Promo, estoque, destaque) VALUES
    (1, 'Tenis Sport', 'O Tênis de Corrida oferece conforto e desempenho para suas corridas. Com amortecimento responsivo e design leve, é perfeito para corredores em busca de performance e conforto.', 100, 90, 1, 1),
    (2, 'Tenis Air Force', 'O Tênis Air Force Preto combina estilo e conforto em um design clássico. Feito com material durável e uma sola resistente, é perfeito para qualquer ocasião. Seja casual ou sofisticado, este tênis é uma escolha       elegante para o dia a dia.', 500, 450, 10, 1),
@@ -131,6 +133,3 @@ Configure as variáveis de ambiente e o banco de dados de acordo com o arquivo a
    ```
 
    ---
-
-
-
