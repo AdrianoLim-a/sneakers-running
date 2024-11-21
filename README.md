@@ -74,7 +74,7 @@ Navegue até a pasta do frontend e instale as dependências:
 
 
 ```bash
-cd frontend
+cd front-end
 ```
 
 
