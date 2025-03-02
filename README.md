@@ -165,7 +165,5 @@ Caso tenha dúvidas ou sugestões, entre em contato:
 
 ---
 
-📜 **Licença:** Este projeto está licenciado sob a MIT License. Consulte o arquivo LICENSE para mais detalhes.
-
-💡 Desenvolvido por [Adriano Lima] 😊
+💡 Desenvolvido por Adriano Lima 😊
 
