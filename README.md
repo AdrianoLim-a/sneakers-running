@@ -1,120 +1,140 @@
 
-## Descrição do Projeto
+# 🏃 Sneakers Running
 
-Sneakers Running
+Sneakers Running é um projeto desenvolvido para criar uma experiência online interativa para a venda de tênis esportivos. O sistema oferece funcionalidades como catálogo de produtos, carrinho de compras, cadastro de usuários, recuperação de senha via e-mail e salvamento de dados de compras em um banco de dados.
 
-Sneakers Running :running: é um projeto desenvolvido para criar uma experiência online interativa para a venda de tênis esportivos. O sistema oferece funcionalidades como catálogo de produtos, carrinho de compras, cadastro de usuários, recuperação de senha via e-mail e armazenamento seguro de compras em um banco de dados.
+Este projeto utiliza tecnologias modernas como **AngularJS** no frontend e **Spring Boot** no backend.
 
-O projeto utiliza tecnologias modernas como AngularJS no frontend e Spring Boot no backend.
+---
 
-:bulb: Objetivos
+## 🎯 Objetivos
 
-✨ Oferecer um catálogo dinâmico de tênis esportivos.
+✅ Oferecer um catálogo dinâmico de tênis esportivos.  
+✅ Permitir que os usuários gerenciem um carrinho de compras e finalizem pedidos.  
+✅ Facilitar o cadastro e login de usuários.  
+✅ Implementar recuperação de senha com envio de e-mail.  
+✅ Garantir o armazenamento seguro de dados de compra em um banco de dados.  
 
-🛒 Permitir que os usuários gerenciem um carrinho de compras e finalizem pedidos.
+---
 
-👤 Facilitar o cadastro e login de usuários.
+## 🔥 Funcionalidades do Sistema
 
-🔐 Implementar recuperação de senha com envio de e-mail.
+- 🏷️ **Catálogo de Produtos:** Exibição de todos os modelos disponíveis, com detalhes como preço e descrição.  
+- 🛒 **Carrinho de Compras:** Adicione produtos, visualize o total e finalize a compra.  
+- 👤 **Cadastro de Usuários:** Registre-se, faça login e acompanhe suas compras.  
+- 🔐 **Esqueci a Senha:** Recuperação de acesso por e-mail.  
+- 💾 **Banco de Dados:** Salvamento seguro de informações de pedidos e usuários.  
 
-🗄️ Garantir o armazenamento seguro de dados de compra em um banco de dados.
+---
 
-:wrench: Funcionalidades do Sistema
+## 🚀 Tecnologias Utilizadas
 
-:shoe: Catálogo de Produtos: Exibição de todos os modelos disponíveis, com detalhes como preço e descrição.
+### Frontend
 
-🛒 Carrinho de Compras: Adicione produtos, visualize o total e finalize a compra.
+![AngularJS](https://img.shields.io/badge/AngularJS-DD0031?style=for-the-badge&logo=angularjs&logoColor=white)  
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)  
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)  
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)  
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)  
 
-👤 Cadastro de Usuários: Registre-se, faça login e acompanhe suas compras.
+### Backend
 
-🔐 Esqueci a Senha: Recuperação de acesso por e-mail.
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)  
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring&logoColor=white)  
 
-💾 Banco de Dados: Salvamento seguro de informações de pedidos e usuários.
+---
 
-:gear: Tecnologias Utilizadas
+## 📂 Estrutura do Projeto
 
-✨ Frontend
-
-AngularJS – Framework para desenvolvimento de interfaces dinâmicas.
-
-TypeScript – Linguagem para desenvolvimento seguro e escalável.
-
-HTML/CSS e Bootstrap – Estilização responsiva e atraente.
-
-💻 Backend
-
-Java – Linguagem para desenvolvimento do backend.
-
-Spring Boot – Framework para construção de APIs RESTful.
-
-:house: Estrutura do Projeto
-
+```
 /sneakers-running
 │-- frontend/  # Código-fonte do frontend desenvolvido em AngularJS
 │-- backend/   # Código-fonte do backend desenvolvido em Java
+```
 
-:clipboard: Configuração do Ambiente
+---
 
-1️⃣ Instalar o Node.js
+## ⚙️ Configuração do Ambiente
 
-Certifique-se de que o Node.js está instalado. Se ainda não o instalou, faça o download através do link:
+### 1️⃣ Instalar o Node.js
 
-🔗 Baixar Node.js
+Certifique-se de que o **Node.js** está instalado. Caso contrário, faça o download:
 
-2️⃣ Clonar o Repositório
+🔗 [Baixar Node.js](https://nodejs.org/)
 
-Clone o repositório para seu ambiente local:
+### 2️⃣ Clonar o Repositório
 
+Clone o repositório para o seu ambiente local:
+
+```bash
 git clone https://github.com/AdrianoLim-a/Repositorio_web.git
+```
 
-3️⃣ Configurar o Frontend (AngularJS)
+### 3️⃣ Configurar o Frontend (AngularJS)
 
 Instale o Angular CLI, caso ainda não tenha:
 
+```bash
 npm install -g @angular/cli
+```
 
 Navegue até a pasta do frontend e instale as dependências:
 
+```bash
 cd frontend
 npm install
+```
 
-4️⃣ Configurar o Backend (Java)
+### 4️⃣ Configurar o Backend (Java)
 
-Importe o projeto backend em sua IDE favorita (IntelliJ IDEA, Eclipse, VS Code).
+Importe o projeto backend em sua IDE favorita (**IntelliJ, Eclipse, etc.**).  
+Configure as variáveis de ambiente e o banco de dados conforme o arquivo **application.properties**.
 
-⚙️ Configure as variáveis de ambiente e o banco de dados de acordo com o arquivo application.properties.
+---
 
-:floppy_disk: Configuração do Banco de Dados (MySQL)
+## 🗄️ Configuração do Banco de Dados (MySQL)
 
-Criar o banco de dados MySQL no MySQL Workbench 8.0, utilizando o seguinte comando:
+Crie o banco de dados MySQL utilizando o MySQL Workbench 8.0:
 
+```sql
 CREATE DATABASE loja;
+```
 
-:rocket: Executando o Projeto
+---
 
-🌐 Iniciar o Frontend
+## 🚀 Executando o Projeto
+
+### 🌐 Iniciar o Frontend
 
 No diretório do frontend, execute:
 
+```bash
 ng serve
+```
 
-Acesse a aplicação pelo navegador: http://localhost:4200
+Acesse o frontend no navegador: [http://localhost:4200](http://localhost:4200)
 
-💻 Iniciar o Backend
+### 💻 Iniciar o Backend
 
 Execute o backend pela sua IDE ou terminal:
 
+```bash
 mvn spring-boot:run
+```
 
-🏬 Adicionando Produtos ao Estoque
+---
+
+## 🏪 Adicionando Produtos ao Estoque
 
 Após configurar o backend e o banco de dados, é necessário adicionar produtos ao estoque. Para isso, siga os passos abaixo:
 
-Acesse o banco de dados loja.
+1️⃣ Acesse o banco de dados **loja**.  
+2️⃣ Insira os produtos manualmente via SQL ou utilizando uma API criada no backend.
 
 Insira os produtos manualmente via SQL ou utilizando uma API criada no backend.
 
 Exemplo de inserção manual via SQL:
+
 ```bash
 INSERT INTO produto(codigo, nome, descritivo, valor, valor_Promo, estoque, destaque) VALUES
 (1, 'Tenis Sport', 'O Tênis de Corrida oferece conforto e desempenho para suas corridas. Com amortecimento responsivo e design leve, é perfeito para corredores em busca de performance e conforto.', 100, 90, 1, 1),
@@ -131,3 +151,21 @@ personalidade para o dia a dia.', 180, 170, 8, 1);
 ```
 
 ---
+
+## 🤝 Contribuição
+
+Sinta-se à vontade para contribuir com melhorias no projeto! 🚀  
+Caso tenha sugestões ou encontre problemas, abra uma **issue** ou envie um **pull request**. 
+
+## 📞 Contato
+
+Caso tenha dúvidas ou sugestões, entre em contato:
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Adriano%20Lima-blue)](https://www.linkedin.com/in/adriano-lima-da-silva-abbb6511a/)
+
+---
+
+📜 **Licença:** Este projeto está licenciado sob a MIT License. Consulte o arquivo LICENSE para mais detalhes.
+
+💡 Desenvolvido por [Adriano Lima] 😊
+
