@@ -1,129 +1,120 @@
 
 ## Descrição do Projeto
 
-Sneakers Running é um projeto desenvolvido para criar uma experiência online interativa para a venda de tênis esportivos. O sistema oferece funcionalidades como catálogo de produtos, carrinho de compras, cadastro de usuários, recuperação de senha via e-mail e salvamento de dados de compras em um banco de dados. 
+Sneakers Running
 
-Este projeto utiliza tecnologias modernas como AngularJS no frontend e Spring Boot no backend.
+Sneakers Running :running: é um projeto desenvolvido para criar uma experiência online interativa para a venda de tênis esportivos. O sistema oferece funcionalidades como catálogo de produtos, carrinho de compras, cadastro de usuários, recuperação de senha via e-mail e armazenamento seguro de compras em um banco de dados.
 
----
+O projeto utiliza tecnologias modernas como AngularJS no frontend e Spring Boot no backend.
 
-## Objetivos
+:bulb: Objetivos
 
-- Oferecer um catálogo dinâmico de tênis esportivos.
-- Permitir que os usuários gerenciem um carrinho de compras e finalizem pedidos.
-- Facilitar o cadastro e login de usuários.
-- Implementar recuperação de senha com envio de e-mail.
-- Garantir o armazenamento seguro de dados de compra em um banco de dados.
+✨ Oferecer um catálogo dinâmico de tênis esportivos.
 
----
+🛒 Permitir que os usuários gerenciem um carrinho de compras e finalizem pedidos.
 
-## Funcionalidades do Sistema
+👤 Facilitar o cadastro e login de usuários.
 
-- **Catálogo de Produtos:** Exibição de todos os modelos disponíveis, com detalhes como preço e descrição.
-- **Carrinho de Compras:** Adicione produtos, visualize o total e finalize a compra.
-- **Cadastro de Usuários:** Registre-se, faça login e acompanhe suas compras.
-- **Esqueci a Senha:** Recuperação de acesso por e-mail.
-- **Banco de Dados:** Salvamento seguro de informações de pedidos e usuários.
+🔐 Implementar recuperação de senha com envio de e-mail.
 
----
+🗄️ Garantir o armazenamento seguro de dados de compra em um banco de dados.
 
-## Tecnologias Utilizadas
+:wrench: Funcionalidades do Sistema
 
-### Frontend
-- **AngularJS:** Framework para desenvolvimento de interfaces dinâmicas.
-- **TypeScript:** Linguagem para desenvolvimento seguro e escalável.
-- **HTML/CSS e Bootstrap:** Estilização responsiva e atraente.
+:shoe: Catálogo de Produtos: Exibição de todos os modelos disponíveis, com detalhes como preço e descrição.
 
-### Backend
-- **Java:** Linguagem para desenvolvimento do backend.
-- **Spring Boot:** Framework para construção de APIs RESTful.
+🛒 Carrinho de Compras: Adicione produtos, visualize o total e finalize a compra.
 
----
+👤 Cadastro de Usuários: Registre-se, faça login e acompanhe suas compras.
 
-## Estrutura do Projeto
+🔐 Esqueci a Senha: Recuperação de acesso por e-mail.
 
-- **frontend/:** Código-fonte do frontend desenvolvido em AngularJS.
-- **backend/:** Código-fonte do backend desenvolvido em Java.
+💾 Banco de Dados: Salvamento seguro de informações de pedidos e usuários.
 
----
+:gear: Tecnologias Utilizadas
 
-## Configuração do Ambiente
+✨ Frontend
 
-### 1. Instalar o Node.js
+AngularJS – Framework para desenvolvimento de interfaces dinâmicas.
 
-Certifique-se que o Node esteja instalado, caso já tenha feito a instalação pode ignorar esta etapa e caso não tenha feito, acesso o seguinte link:
+TypeScript – Linguagem para desenvolvimento seguro e escalável.
 
+HTML/CSS e Bootstrap – Estilização responsiva e atraente.
 
-https://www.nodejs.tech/pt-br/download
+💻 Backend
 
+Java – Linguagem para desenvolvimento do backend.
 
-### 2. Clonar o Repositório
-Clone o repositório para o seu ambiente local:
-```bash
+Spring Boot – Framework para construção de APIs RESTful.
+
+:house: Estrutura do Projeto
+
+/sneakers-running
+│-- frontend/  # Código-fonte do frontend desenvolvido em AngularJS
+│-- backend/   # Código-fonte do backend desenvolvido em Java
+
+:clipboard: Configuração do Ambiente
+
+1️⃣ Instalar o Node.js
+
+Certifique-se de que o Node.js está instalado. Se ainda não o instalou, faça o download através do link:
+
+🔗 Baixar Node.js
+
+2️⃣ Clonar o Repositório
+
+Clone o repositório para seu ambiente local:
+
 git clone https://github.com/AdrianoLim-a/Repositorio_web.git
-```
 
-### 3. Configurar o Frontend (AngularJS)
+3️⃣ Configurar o Frontend (AngularJS)
+
 Instale o Angular CLI, caso ainda não tenha:
 
-```bash
 npm install -g @angular/cli
-```
+
 Navegue até a pasta do frontend e instale as dependências:
 
-
-
-```bash
-cd front-end
-```
-
-
-
-```bash
+cd frontend
 npm install
-```
 
+4️⃣ Configurar o Backend (Java)
 
+Importe o projeto backend em sua IDE favorita (IntelliJ IDEA, Eclipse, VS Code).
 
-### 4. Configurar o Backend (Java)
-Importe o projeto backend em sua IDE favorita (IntelliJ, Eclipse, etc.).
-Configure as variáveis de ambiente e o banco de dados de acordo com o arquivo application.properties.
+⚙️ Configure as variáveis de ambiente e o banco de dados de acordo com o arquivo application.properties.
 
----
+:floppy_disk: Configuração do Banco de Dados (MySQL)
 
-### 5. Preparar o ambiente do Banco de Dados Relacional (MySQL)
-   
-Criar o banco de dados MyQL, no MySQL Wokbench 8.0, utilizando o seguinte comando:
+Criar o banco de dados MySQL no MySQL Workbench 8.0, utilizando o seguinte comando:
 
-```bash
-create database loja;
-```
+CREATE DATABASE loja;
 
+:rocket: Executando o Projeto
 
-### 6. Executar o Projeto
-
-Frontend
+🌐 Iniciar o Frontend
 
 No diretório do frontend, execute:
 
-```bash
 ng serve
-```
 
-Acesse o frontend no navegador através do endereço: http://localhost:4200.
+Acesse a aplicação pelo navegador: http://localhost:4200
 
-Backend
+💻 Iniciar o Backend
 
 Execute o backend pela sua IDE ou terminal:
 
-
-```bash
 mvn spring-boot:run
-```
 
+🏬 Adicionando Produtos ao Estoque
 
-E adicionar produtos em estoque:
+Após configurar o backend e o banco de dados, é necessário adicionar produtos ao estoque. Para isso, siga os passos abaixo:
 
+Acesse o banco de dados loja.
+
+Insira os produtos manualmente via SQL ou utilizando uma API criada no backend.
+
+Exemplo de inserção manual via SQL:
 ```bash
 INSERT INTO produto(codigo, nome, descritivo, valor, valor_Promo, estoque, destaque) VALUES
 (1, 'Tenis Sport', 'O Tênis de Corrida oferece conforto e desempenho para suas corridas. Com amortecimento responsivo e design leve, é perfeito para corredores em busca de performance e conforto.', 100, 90, 1, 1),
