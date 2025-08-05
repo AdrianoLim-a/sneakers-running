@@ -131,8 +131,6 @@ Após configurar o backend e o banco de dados, é necessário adicionar produtos
 1️⃣ Acesse o banco de dados **loja**.  
 2️⃣ Insira os produtos manualmente via SQL ou utilizando uma API criada no backend.
 
-Insira os produtos manualmente via SQL ou utilizando uma API criada no backend.
-
 Exemplo de inserção manual via SQL:
 
 ```bash
