@@ -13,7 +13,7 @@ export class ClienteService {
   public gravar(obj : Cliente) : string {
 
     let mensagem = " ";
-    this.http.post<String>("http://localhost:8090/api/cliente", obj).subscribe({    
+    this.http.post<String>("http://localhost:8080/api/cliente", obj).subscribe({    
     next : data =>
       {
         mensagem = "Registro salvo com sucesso!"
@@ -28,7 +28,7 @@ export class ClienteService {
   }
   public remover(obj: Cliente) :string{    
     let mensagem  = "";
-    this.http.delete<String>("http://localhost:8090/api/cliente/"+ obj.codigo).subscribe({
+    this.http.delete<String>("http://localhost:8080/api/cliente/"+ obj.codigo).subscribe({
       next: data =>
       {
         mensagem =  "Registro removido com sucesso !";
@@ -43,19 +43,19 @@ export class ClienteService {
   
   
   public carregar(codigo: number): Observable<Cliente>{
-    return this.http.get<Cliente>("http://localhost:8090/api/cliente/"+codigo);         
+    return this.http.get<Cliente>("http://localhost:8080/api/cliente/"+codigo);         
   }
 
   public listar() :  Observable<Cliente[]>{    
-      return this.http.get<Cliente[]>("http://localhost:8090/api/clientes");      
+      return this.http.get<Cliente[]>("http://localhost:8080/api/clientes");      
   }
 
   public login(obj : Cliente) : Observable<Cliente> {
-     return this.http.post<Cliente>("http://localhost:8090/api/cliente/login", obj);
+     return this.http.post<Cliente>("http://localhost:8080/api/cliente/login", obj);
     
   }
   public esqueci(email : string) : Observable<Cliente> {
-    return this.http.get<Cliente>("http://localhost:8090/api/cliente/esqueci/"+email);
+    return this.http.get<Cliente>("http://localhost:8080/api/cliente/esqueci/"+email);
    
  }
 }

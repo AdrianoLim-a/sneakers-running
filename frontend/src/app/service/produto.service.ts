@@ -13,7 +13,7 @@ export class ProdutoService {
   
   public gravar(obj : Produto) : string{    
     let mensagem  = "";
-    this.http.post<String>("http://localhost:8090/api/produto", obj).subscribe({
+    this.http.post<String>("http://localhost:8080/api/produto", obj).subscribe({
     next: data =>
     {
       mensagem =  "Registro salvo com sucesso !";
@@ -28,7 +28,7 @@ export class ProdutoService {
 
 public alterar(obj: Produto): string{
   let mensagem  = "";
-  this.http.put<String>("http://localhost:8090/api/produto", obj).subscribe({
+  this.http.put<String>("http://localhost:8080/api/produto", obj).subscribe({
     next: data =>
     {
       mensagem =  "Registro alterado com sucesso !";
@@ -43,7 +43,7 @@ public alterar(obj: Produto): string{
 
 public remover(obj: Produto) :string{    
   let mensagem  = "";
-  this.http.delete<String>("http://localhost:8090/api/produto/"+ obj.codigo).subscribe({
+  this.http.delete<String>("http://localhost:8080/api/produto/"+ obj.codigo).subscribe({
     next: data =>
     {
       mensagem =  "Registro removido com sucesso !";
@@ -58,15 +58,15 @@ public remover(obj: Produto) :string{
 
 
 public carregar(codigo: string): Observable<Produto>{
-  return this.http.get<Produto>("http://localhost:8090/api/produto/"+codigo);         
+  return this.http.get<Produto>("http://localhost:8080/api/produto/"+codigo);         
 }
 
 public listar() :  Observable<Produto[]>{    
-    return this.http.get<Produto[]>("http://localhost:8090/api/produtos");      
+    return this.http.get<Produto[]>("http://localhost:8080/api/produtos");      
 }
 
 public pesquisar(busca: String) :  Observable<Produto[]>{    
-  return this.http.get<Produto[]>("http://localhost:8090/api/produto/busca/"+ busca);      
+  return this.http.get<Produto[]>("http://localhost:8080/api/produto/busca/"+ busca);      
 }
 
 

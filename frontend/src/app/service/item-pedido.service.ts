@@ -10,12 +10,12 @@ export class ItemPedidoService {
   constructor(private http : HttpClient) { }
 
   public gravar(obj: Item): Observable<string> {
-    return this.http.post<string>("http://localhost:8090/api/item_pedido", obj);
+    return this.http.post<string>("http://localhost:8080/api/item_pedido", obj);
   }
 
   public remover(obj: Item) :string{    
     let mensagem  = "";
-    this.http.delete<String>("http://localhost:8090/api/item_pedido/"+ obj.codigo).subscribe({
+    this.http.delete<String>("http://localhost:8080/api/item_pedido/"+ obj.codigo).subscribe({
       next: data =>
       {
         mensagem =  "Item removido com sucesso!";
@@ -30,11 +30,11 @@ export class ItemPedidoService {
   
   
   public carregar(codigo: number): Observable<Item>{
-    return this.http.get<Item>("http://localhost:8090/api/item_pedido/"+codigo);         
+    return this.http.get<Item>("http://localhost:8080/api/item_pedido/"+codigo);         
   }
 
   public listar() :  Observable<Item[]>{    
-      return this.http.get<Item[]>("http://localhost:8090/api/itens");      
+      return this.http.get<Item[]>("http://localhost:8080/api/itens");      
   }
 
 }
