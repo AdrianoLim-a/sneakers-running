@@ -1,4 +1,4 @@
-package com.fatec.loja.controller;
+package com.fatec.loja;
 
 import java.util.List;
 import java.util.Optional;
